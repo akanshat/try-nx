@@ -1,0 +1,51 @@
+{
+  "npmScope": "myorg",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "YWI0NzM2OGEtYWMwNy00Zjc5LTgxYTYtNTllYzllODdiMTRmfHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "books-data-access": {
+      "tags": []
+    },
+    "books-feature": {
+      "tags": []
+    },
+    "books-ui": {
+      "tags": []
+    },
+    "bookstore": {
+      "tags": []
+    },
+    "bookstore-e2e": {
+      "tags": [],
+      "implicitDependencies": ["bookstore"]
+    },
+    "ui": {
+      "tags": []
+    }
+  }
+}
