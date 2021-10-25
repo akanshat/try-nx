@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { Button } from '@myorg/ui';
+import { IBook } from '@myorg/shared-models';
 /* eslint-disable-next-line */
 export interface BookProps {
-  book: any;
-  onAdd: (book: any) => void;
+  book: IBook;
+  onAdd: (book: IBook) => void;
 }
 
 const StyledBook = styled.div`

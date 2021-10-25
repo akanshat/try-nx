@@ -28,6 +28,9 @@
     ]
   },
   "projects": {
+    "api": {
+      "tags": []
+    },
     "books-data-access": {
       "tags": []
     },
@@ -43,6 +46,9 @@
     "bookstore-e2e": {
       "tags": [],
       "implicitDependencies": ["bookstore"]
+    },
+    "shared-models": {
+      "tags": []
     },
     "ui": {
       "tags": []

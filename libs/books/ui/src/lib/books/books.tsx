@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { Book } from '@myorg/books/ui';
+import { IBook } from '@myorg/shared-models';
 /* eslint-disable-next-line */
 export interface BooksProps {
-  books: any[];
-  onAdd: (book: any) => void;
+  books: IBook[];
+  onAdd: (book: IBook) => void;
 }
 
 const StyledBooks = styled.div`
